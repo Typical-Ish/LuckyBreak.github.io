@@ -1,0 +1,55 @@
+/*
+
+Ismael Saint Fleur
+
+04/29/2021
+
+*/
+
+
+#Form {
+    display: block;
+    background: white;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+    height: fit-content;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+#Form2 {
+    font-family: monospace;
+    color: #243e36;
+    text-align: justify;
+    color: black;
+    margin: 30px;
+}
+
+input {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  background-color: #7CA982;
+  color: black;
+
+}
+ 
+#subject {
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width:500px){
+    .container2 {
+        overflow: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

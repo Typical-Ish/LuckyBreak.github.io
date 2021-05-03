@@ -1,0 +1,262 @@
+/*
+
+Ismael Saint Fleur
+
+04/29/2021
+
+*/
+
+
+body {
+    position: relative;
+}
+#container {
+    width: 100%;
+    height: 100%;
+
+}
+
+#LG-box {
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    background-color: #7CA982;
+    color: white;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 77px;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+}
+#DG-box {
+    font-family:monospace, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    background-color: #243E36;
+    color: white;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 77px;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.topnav {
+    font-family: monospace, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color: white ;
+    color: #243E36;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 77px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*====================================
+LinK Styles
+=======================================*/
+#LG-box a:link {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+#LG-box a:visited {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+#DG-box a:link {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+#DG-box a:visited {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.topnav a:link {
+    color: #243E36;
+    text-decoration: none;
+}
+.topnav a:visited {
+    color: gray;
+    text-decoration: none;
+}
+.topnav a:hover {
+    color:#7CA982;
+    ;
+}
+/*======================================
+Photo Styles
+========================================*/
+:root {
+    --main-radius:5px;
+    --main-padding:1px;
+}
+.container2 {
+    
+    display:grid;
+    height: 80vh;
+    padding: 10px;
+    scroll-behavior: smooth;
+    margin-bottom: 10px;
+    overflow: auto;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr ;
+    grid-template-areas: 
+    "HelpUp Water main main"
+    "HelpUp Car main main "
+    "HelpUp Liftbox main main"
+    "HelpUp Liftbox main main ";
+    gap: 0.5rem;
+}
+
+
+#Car {
+    display: flex;
+    overflow: auto;
+    background-image: url("Car help.jpg.jpg");
+    grid-area: Car;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    
+}
+
+#HelpUp  {
+
+    display:flex;
+    overflow-y: auto;
+    background-image: url(Pull\ Up.jpg.jpg);
+    background-repeat: repeat-y;
+    grid-area: HelpUp;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#Liftbox {
+    display: flex;
+    background: url("Lifting Boxes.jpg.jpg");
+    grid-area: Liftbox;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#Water {
+    display: flex;
+    background: url("Giving\ water.jpg.jpg");
+    grid-area: Water;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+
+
+/*==========================================
+Welcome Box
+============================================*/
+main {
+    display: flex;
+    background: #FCE097;
+    grid-area: main;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#h1 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: monospace;
+    font-size: 64px;
+    color: white;
+
+}
+
+#h2 {
+    display: flex;
+    justify-content: center;
+    background:#FDFFB4;
+    background-size: 20px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 64px;
+    color:#243E36;
+}
+
+#h3 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    color: white;   
+}
+
+#h3 h3 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-align: center;
+    font-family: monospace;
+    font-size: 45px;
+    color: white;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+#button button {
+    text-align: center;
+    padding-top: 30px;
+    font-family: monospace;
+    font-size: 30px;
+    color:#243E36;
+    height: min-content;
+    background-color:#FDFFB4;
+    border: 6px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/*==========================================
+
+============================================*/
+
+.footer {
+
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #243E36;
+    color: white;
+    font-family:monospace;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+@media only screen and (max-width:500px){
+    .container2 {
+        overflow: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "main"
+        "HelpUp"
+        "Water"
+        "Liftbox"
+    }
+}
+    

@@ -1,0 +1,102 @@
+/*
+
+Ismael Saint Fleur
+
+04/29/2021
+
+*/
+
+.container2 {
+    display:grid;
+    justify-content: center;
+    height: 80vh;
+    overflow: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr  ;
+    grid-template-areas: 
+    "Lore Lore Photo"
+    "Lift Water Purpose"
+    "Sponser Sponsers Sponsers";
+    gap: 10px;
+}
+
+#Lore {
+    display: flex;
+    background: white;
+    height: auto;
+    color: #243e36;
+    font-family: monospace;
+    font-size: 26px;
+    text-align: right;
+    grid-area: Lore;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#Photo {
+    display: flex;
+    background-image: url(IMG_0311.JPG);
+    background-attachment: scroll;
+    grid-area: Photo;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+}
+
+#Lift {
+    display: flex;
+    background-image: url(Lifting\ Boxes.jpg.jpg);
+    grid-area: Lift;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+}
+
+#Water {
+    display: flex;
+    background-image: url(Giving\ water.jpg.jpg);
+    grid-area: Water;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+}
+
+#Purpose {
+    display: flex;
+    background: white;
+    grid-area: Purpose;
+    color: #243e36;
+    font-family: monospace;
+    font-size: 26px;
+    text-align: right;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+}
+
+#Sponsors {
+    display: flex;
+    background: url(AI-logo-generator-PAGE-2020.jpg);
+    background: white;
+    grid-area: Sponsors;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:500px){
+    .container2 {
+        overflow: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-area: 
+        "Lore"
+        "Photo" 
+        "Lift"
+        "Water"
+        "Purpose"
+        "Sponsors"}
+
+    }

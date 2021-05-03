@@ -1,0 +1,79 @@
+/*
+
+Ismael Saint Fleur
+
+04/29/2021
+
+*/
+.container2 {
+    display:grid;
+    height: 80vh;
+    padding: 10px;
+    scroll-behavior: smooth;
+    margin-bottom: 10px;
+    grid-template-columns: 2fr 2fr 2fr  ;
+    grid-template-rows: 2fr 2fr 2fr 2fr ;
+    border: 1px solid red;
+    gap: 10px;
+    
+}
+
+#Left {
+    text-align: center;
+    margin: 5px;
+    display: grid;
+    background: white;
+    border: 5px solid #243e36;
+    width: 200px;
+    border-radius: 5px;
+    height: fit-content;
+    color: #243e36;
+    font-size: 36px;
+    font-family: monospace;
+
+}
+
+#Center {
+    
+    display: grid;
+    justify-content: center;
+    background: white;
+    width: 600px;
+    border: 5px solid #243e36;
+    border-radius: 5px;
+    color: #243e36;
+    font-size: 36px;
+    font-family: monospace;
+    
+}
+
+form {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    padding: 20px;
+    resize: vertical;
+    background-color: #7CA982;
+    color: black;
+}
+
+@media only screen and (max-width:500px){
+    .container2 {
+        overflow: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+}
